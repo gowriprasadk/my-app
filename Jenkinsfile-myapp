@@ -1,0 +1,9 @@
+node{
+  stage('SCM Checkout'){
+    git 'https://github.com/gowriprasadk/my-app'
+  }
+  stage('Compile-Package'){
+    sh 'mvn package'
+  }  
+  
+}  
